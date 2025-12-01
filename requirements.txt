@@ -1,0 +1,11 @@
+streamlit
+numpy==1.26.4
+pandas==2.0.3
+joblib
+python-dotenv
+supabase
+plotly
+seaborn
+matplotlib
+scikit-learn
+pip==25.3
