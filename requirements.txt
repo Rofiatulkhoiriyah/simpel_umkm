@@ -3,11 +3,12 @@ numpy==1.26.4
 pandas==2.0.3
 joblib==1.4.2
 python-dotenv
-supabase-py==2.24.0
+supabase-py
 plotly==5.24.1
 seaborn==0.12.2
 matplotlib==3.7.2
 scikit-learn
 
 pip==25.3
+
 
