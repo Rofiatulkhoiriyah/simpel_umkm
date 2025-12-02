@@ -158,7 +158,7 @@ with col5:
 fig1 = px.histogram(df, x="age", title="Distribusi Usia Pengusaha")
 fig2 = px.histogram(df, x="age", color="output", barmode="group",
                     title="Distribusi Usia berdasarkan Output (1=Berlanjut, 0=Tidak)")
-fig3 = px.scatter(df, x="age", y="grade", color="gender", barmode="group",
+fig3 = px.scatter(df, x="age", y="grade", color="gender",
                   title="Usia vs. Grade")
 fig4 = px.histogram(df, x="city", color="output", barmode="group",
                     title="Distribusi Kota berdasarkan Output (1=Berlanjut, 0=Tidak)")
@@ -174,12 +174,7 @@ prov_count = (
                 .size()
                 .reset_index(name="Jumlah")
 )
-fig_prov = px.bar(
-    prov_count,
-    x="city",
-    y="Jumlah",
-    color="output",   # membedakan berkelanjutan & tidak berkelanjutan
-    barmode="group",
+fig_prov = px.bar( prov_count, x="city", y="Jumlah", color="output", barmode="group",
     title="Jumlah UMKM Berkelanjutan dan Tidak Berkelanjutan berdasarkan Kota"
 )
 st.plotly_chart(fig_prov)
