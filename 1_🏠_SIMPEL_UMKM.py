@@ -53,7 +53,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("## 🏪 SIMPEL-UMKM")
+st.markdown("## 👩🏼‍💻 SIMPEL-UMKM")
 
 # ========================
 # 📝 Penjelasan Sistem
