@@ -53,7 +53,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("## 🏪 Sistem Analisis Keberlanjutan UMKM")
+st.markdown("## 🏪 SIMPEL-UMKM")
 
 # ========================
 # 📝 Penjelasan Sistem
@@ -62,10 +62,9 @@ st.markdown("""
     <div class="info-card">
         <div class="card-title">📝 Penjelasan Sistem</div>
         <div class="card-text">
-            Sistem ini dirancang sebagai platform analitik untuk memberikan gambaran menyeluruh 
-            mengenai kondisi dan keberlanjutan UMKM berdasarkan data karakteristik pelaku usaha. 
-            Melalui dashboard ini, pengguna dapat melihat distribusi data, pola tren, dan hasil 
-            pemodelan yang membantu memahami faktor-faktor penting yang memengaruhi keberlanjutan usaha.
+            Sistem Inteligensi Mesin untuk Prediksi Eksistensi & Lanjutan UMKM (SIMPEL-UMKM) merupakan platform berbasis web yang dirancang untuk membantu menganalisis kondisi dan potensi keberlanjutan usaha mikro, kecil, dan menengah (UMKM). Pengguna memasukkan data identitas dan perilaku usaha, kemudian sistem akan memproses informasi tersebut menggunakan model Machine Learning.
+            Setiap data yang masuk diverifikasi, disimpan ke dalam database, lalu diolah untuk menghasilkan output berupa prediksi keberlanjutan usaha. Sistem juga dilengkapi fitur visualisasi data agar pengguna dapat melihat statistik dan pola yang relevan dari data UMKM secara lebih informatif.
+            Dengan antarmuka yang sederhana, visual interaktif, serta proses analitik otomatis, sistem ini diharapkan dapat memberikan pengalaman yang mudah digunakan oleh pemilik UMKM, peneliti, maupun pengambil kebijakan.
         </div>
     </div>
 """, unsafe_allow_html=True)
@@ -78,10 +77,10 @@ st.markdown("""
         <div class="card-title">🎯 Tujuan Sistem</div>
         <div class="card-text">
             <ul class="card-list">
-                <li>Menyediakan informasi analitis mengenai kondisi UMKM secara akurat dan informatif.</li>
-                <li>Mengidentifikasi faktor utama yang berpengaruh terhadap keberlanjutan UMKM.</li>
-                <li>Mendukung pengambilan keputusan berbasis data bagi pendamping UMKM, peneliti, dan pemerintah.</li>
-                <li>Menjadi alat bantu evaluasi bagi berbagai pemangku kepentingan dalam pengembangan UMKM.</li>
+                <li>Memberikan prediksi apakah UMKM berpotensi berlanjut atau tidak berlanjut berdasarkan data perilaku dan karakteristik usaha.</li>
+                <li>Membantu pemilik usaha, pemerintah daerah, dan lembaga pendukung UMKM dalam membuat keputusan berbasis data.</li>
+                <li>Membantu UMKM untuk lebih memahami kondisi bisnisnya melalui teknologi data-driven dan prediktif.</li>
+                <li>Semua data yang diinput akan disimpan dalam database terpusat sehingga dapat digunakan untuk riset lanjutan.</li>
             </ul>
         </div>
     </div>
