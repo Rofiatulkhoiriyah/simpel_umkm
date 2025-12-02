@@ -205,9 +205,9 @@ if st.button("🔍 Prediksi Keberlanjutan UMKM"):
     label = output_encoder.inverse_transform([pred])[0]
 
     if pred == 1:
-        st.success(f"UMKM Anda **BERPOTENSI BERKELANJUTAN** 🚀 (Probabilitas: {proba:.3f})")
+        st.success(f"UMKM Anda **BERPOTENSI BERKELANJUTAN** 🚀 (Probabilitas: {proba:.3f}) Pertahankan Ketahanan UMKM Anda dengan mengikuti rekomendasi berikut:")
     else:
-        st.error(f"UMKM Anda **BERESIKO TIDAK BERKELANJUTAN** ⚠️ (Probabilitas: {proba:.3f})")
+        st.error(f"UMKM Anda **BERESIKO TIDAK BERKELANJUTAN** ⚠️ (Probabilitas: {proba:.3f}) Tingkatkan Ketahanan UMKM anda dengan mengikuti rekomendasi berikut:")
 
     # === Mapping rekomendasi berdasarkan nama fitur ===
     feature_reco = {
@@ -276,6 +276,7 @@ if st.button("🔍 Prediksi Keberlanjutan UMKM"):
     # =============================================
     # SIMPAN DATA KE SUPABASE
     # =============================================
+    output_category = "Ya" if pred == 1 else "Tidak"
     try:
         save_data = {
             "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -316,7 +317,7 @@ if st.button("🔍 Prediksi Keberlanjutan UMKM"):
             "q25": likert[Q25],
             "q26": likert[Q26],
             "q27": likert[Q27],
-            "output": pred,
+            "output": output_category,
         }
 
         # tambahkan Q1–Q27
