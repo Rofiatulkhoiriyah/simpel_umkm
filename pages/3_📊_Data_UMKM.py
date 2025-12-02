@@ -168,6 +168,22 @@ st.plotly_chart(fig2)
 st.plotly_chart(fig3)
 st.plotly_chart(fig4)
 
+# Statistik tambahan: jumlah UMKM per kota berdasarkan status prediksi
+prov_count = (
+    df_processed.groupby(["city", "output"])
+                .size()
+                .reset_index(name="Jumlah")
+)
+fig_prov = px.bar(
+    prov_count,
+    x="city",
+    y="Jumlah",
+    color="output",   # membedakan berkelanjutan & tidak berkelanjutan
+    barmode="group",
+    title="Jumlah UMKM Berkelanjutan dan Tidak Berkelanjutan per Kota"
+)
+st.plotly_chart(fig_prov)
+
 # Statistik tambahan
 prov_count = df_processed["city"].value_counts().reset_index()
 prov_count.columns = ["Kota", "Jumlah"]
