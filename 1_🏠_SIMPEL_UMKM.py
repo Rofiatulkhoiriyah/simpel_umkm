@@ -62,12 +62,19 @@ st.markdown("""
     <div class="info-card">
         <div class="card-title">📝 Penjelasan Sistem</div>
         <div class="card-text">
-            Sistem Inteligensi Mesin untuk Prediksi Eksistensi & Lanjutan UMKM (SIMPEL-UMKM) merupakan platform berbasis web yang dirancang untuk membantu menganalisis kondisi dan potensi keberlanjutan usaha mikro, kecil, dan menengah (UMKM). Pengguna memasukkan data identitas dan perilaku usaha, kemudian sistem akan memproses informasi tersebut menggunakan model Machine Learning.
-            Setiap data yang masuk diverifikasi, disimpan ke dalam database, lalu diolah untuk menghasilkan output berupa prediksi keberlanjutan usaha. Sistem juga dilengkapi fitur visualisasi data agar pengguna dapat melihat statistik dan pola yang relevan dari data UMKM secara lebih informatif.
-            Dengan antarmuka yang sederhana, visual interaktif, serta proses analitik otomatis, sistem ini diharapkan dapat memberikan pengalaman yang mudah digunakan oleh pemilik UMKM, peneliti, maupun pengambil kebijakan.
+            <p>
+                Sistem Inteligensi Mesin untuk Prediksi Eksistensi & Lanjutan UMKM (SIMPEL-UMKM) merupakan platform berbasis web yang dirancang untuk membantu menganalisis kondisi dan potensi keberlanjutan usaha mikro, kecil, dan menengah (UMKM). Pengguna dapat memasukkan data identitas serta perilaku usaha, kemudian sistem akan memprosesnya menggunakan model Machine Learning.
+            </p>
+            <p>
+                Setiap data yang dikirimkan diverifikasi terlebih dahulu sebelum disimpan ke dalam database. Setelah itu, informasi tersebut diolah oleh model untuk menghasilkan prediksi keberlanjutan usaha. Selain memberikan hasil prediksi, sistem juga menyediakan visualisasi data yang menampilkan statistik dan pola penting dari berbagai karakteristik UMKM.
+            </p>
+            <p>
+                Dengan tampilan yang sederhana, visual interaktif, dan proses analitik otomatis, platform ini dirancang untuk memberikan pengalaman penggunaan yang mudah dan informatif bagi pelaku UMKM, peneliti, maupun pengambil keputusan dalam memahami kondisi usaha secara lebih komprehensif.
+            </p>
         </div>
     </div>
 """, unsafe_allow_html=True)
+
 
 # ========================
 # 🎯 Tujuan Sistem
