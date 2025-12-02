@@ -195,7 +195,7 @@ if st.button("🔍 Prediksi Keberlanjutan UMKM"):
     empty_fields = [label for label, value in required_fields.items() if value in ["", None]]
 
     if empty_fields:
-        st.error("❗ Mohon isi semua data wajib berikut:\n- " + "\n- ".join(empty_fields))
+        st.error("❗ Mohon Lengkapi Data Anda:\n- " + "\n- ".join(empty_fields))
         st.stop()   # Hentikan proses prediksi
 
     X_input = preprocess_input(input_data)
