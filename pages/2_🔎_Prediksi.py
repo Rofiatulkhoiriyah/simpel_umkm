@@ -89,7 +89,7 @@ provinces = ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Jambi", "Sumat
 with col1:
     name = st.text_input("Nama Pemilik*", "")
     gender = st.selectbox("Gender*", gender_encoder.classes_.tolist())
-    age = st.number_input("Age*", min_value=15, max_value=90, step=1)
+    age = st.number_input("Usia*", min_value=15, max_value=90, step=1)
     business_name = st.text_input("Nama Usaha*", "")
     nib = st.text_input("NIB", "")
 
@@ -205,9 +205,9 @@ if st.button("🔍 Prediksi Keberlanjutan UMKM"):
     label = output_encoder.inverse_transform([pred])[0]
 
     if pred == 1:
-        st.success(f"UMKM Anda **BERPOTENSI BERKELANJUTAN** 🚀 (Probabilitas: {proba:.3f}) Pertahankan Ketahanan UMKM dengan cara mengikuti rekomendasi berikut:")
+        st.success(f"UMKM Anda **BERPOTENSI BERKELANJUTAN** 🚀 (Probabilitas: {proba:.3f})")
     else:
-        st.error(f"UMKM Anda **BERESIKO TIDAK BERKELANJUTAN** ⚠️ (Probabilitas: {proba:.3f}) Tingkatkan ketahanan UMKM anda dengan mengikuti rekomendasi berikut:")
+        st.error(f"UMKM Anda **BERESIKO TIDAK BERKELANJUTAN** ⚠️ (Probabilitas: {proba:.3f})")
 
     # === Mapping rekomendasi berdasarkan nama fitur ===
     feature_reco = {
