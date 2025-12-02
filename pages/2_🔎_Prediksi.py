@@ -205,11 +205,9 @@ if st.button("🔍 Prediksi Keberlanjutan UMKM"):
     label = output_encoder.inverse_transform([pred])[0]
 
     if pred == 1:
-        st.success(f"UMKM Anda **BERPOTENSI BERKELANJUTAN** 🚀 (Probabilitas: {proba:.3f})")
-        st.success(f"Anda bisa meningkatkan ketahanan UMKM dengan cara mengikuti rekomendasi berikut:")
+        st.success(f"UMKM Anda **BERPOTENSI BERKELANJUTAN** 🚀 (Probabilitas: {proba:.3f}) Pertahankan Ketahanan UMKM dengan cara mengikuti rekomendasi berikut:")
     else:
-        st.error(f"UMKM Anda **BERESIKO TIDAK BERKELANJUTAN** ⚠️ (Probabilitas: {proba:.3f})")
-        st.error(f"Tingkatkan ketahanan UMKM anda dengan mengikuti rekomendasi berikut:")
+        st.error(f"UMKM Anda **BERESIKO TIDAK BERKELANJUTAN** ⚠️ (Probabilitas: {proba:.3f}) Tingkatkan ketahanan UMKM anda dengan mengikuti rekomendasi berikut:")
 
     # === Mapping rekomendasi berdasarkan nama fitur ===
     feature_reco = {
