@@ -160,10 +160,13 @@ fig2 = px.histogram(df, x="age", color="output", barmode="group",
                     title="Distribusi Usia berdasarkan Output (1=Berlanjut, 0=Tidak)")
 fig3 = px.scatter(df, x="age", y="grade", color="gender",
                   title="Usia vs. Grade")
+fig4 = px.histogram(df, x="city", color="output", barmode="group",
+                    title="Distribusi Kota berdasarkan Output (1=Berlanjut, 0=Tidak)")
 
 st.plotly_chart(fig1)
 st.plotly_chart(fig2)
 st.plotly_chart(fig3)
+st.plotly_chart(fig4)
 
 # Statistik tambahan
 prov_count = df_processed["city"].value_counts().reset_index()
